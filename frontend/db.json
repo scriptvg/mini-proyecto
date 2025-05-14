@@ -1,0 +1,144 @@
+{
+  "clients": [
+    {
+      "id": "g001",
+      "name": "Genara Smith",
+      "email": "genara.smith@email.com",
+      "phone": "555-0101",
+      "status": "active"
+    },
+    {
+      "id": "g002", 
+      "name": "Genara Johnson",
+      "email": "genara.johnson@email.com",
+      "phone": "555-0102",
+      "status": "active"
+    },
+    {
+      "id": "g003",
+      "name": "Genara Williams", 
+      "email": "genara.williams@email.com",
+      "phone": "555-0103",
+      "status": "active"
+    },
+    {
+      "id": "g004",
+      "name": "Genara Brown",
+      "email": "genara.brown@email.com", 
+      "phone": "555-0104",
+      "status": "active"
+    },
+    {
+      "id": "g005",
+      "name": "Genara Davis",
+      "email": "genara.davis@email.com",
+      "phone": "555-0105",
+      "status": "active"
+    },
+    {
+      "id": "g006",
+      "name": "John Anderson",
+      "email": "john.anderson@email.com",
+      "phone": "555-0106", 
+      "status": "active"
+    },
+    {
+      "id": "g007",
+      "name": "Sarah Miller",
+      "email": "sarah.miller@email.com",
+      "phone": "555-0107",
+      "status": "active"
+    },
+    {
+      "id": "g008",
+      "name": "Michael Wilson",
+      "email": "michael.wilson@email.com",
+      "phone": "555-0108",
+      "status": "active"
+    },
+    {
+      "id": "g009",
+      "name": "Emma Taylor",
+      "email": "emma.taylor@email.com",
+      "phone": "555-0109",
+      "status": "active"
+    },
+    {
+      "id": "g010",
+      "name": "James Moore",
+      "email": "james.moore@email.com",
+      "phone": "555-0110",
+      "status": "active"
+    },
+    {
+      "id": "g011",
+      "name": "Emily White",
+      "email": "emily.white@email.com",
+      "phone": "555-0111",
+      "status": "active"
+    },
+    {
+      "id": "g012",
+      "name": "Daniel Lee",
+      "email": "daniel.lee@email.com",
+      "phone": "555-0112",
+      "status": "active"
+    },
+    {
+      "id": "g013",
+      "name": "Olivia Clark",
+      "email": "olivia.clark@email.com",
+      "phone": "555-0113",
+      "status": "active"
+    },
+    {
+      "id": "g014",
+      "name": "William Hall",
+      "email": "william.hall@email.com",
+      "phone": "555-0114",
+      "status": "active"
+    },
+    {
+      "id": "g015",
+      "name": "Sophia King",
+      "email": "sophia.king@email.com",
+      "phone": "555-0115",
+      "status": "active"
+    },
+    {
+      "id": "g016",
+      "name": "Lucas Wright",
+      "email": "lucas.wright@email.com",
+      "phone": "555-0116",
+      "status": "active"
+    },
+    {
+      "id": "g017",
+      "name": "Isabella Scott",
+      "email": "isabella.scott@email.com",
+      "phone": "555-0117",
+      "status": "active"
+    },
+    {
+      "id": "g018",
+      "name": "Mason Green",
+      "email": "mason.green@email.com",
+      "phone": "555-0118",
+      "status": "active"
+    },
+    {
+      "id": "g019",
+      "name": "Ava Baker",
+      "email": "ava.baker@email.com",
+      "phone": "555-0119",
+      "status": "active"
+    },
+    {
+      "id": "g020",
+      "name": "Ethan Adams",
+      "email": "ethan.adams@email.com",
+      "phone": "555-0120",
+      "status": "active"
+    }
+  ]
+}
