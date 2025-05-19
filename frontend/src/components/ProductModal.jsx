@@ -4,9 +4,9 @@ const ProductModal = ({ product, onClose }) => {
   if (!product) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg p-6 max-w-md w-full">
-        <div className="flex justify-between items-center mb-4">
+    <div className="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-50">
+      <div className="w-full max-w-md p-6 bg-white rounded-lg">
+        <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold">{product.nombre}</h2>
           <button 
             onClick={onClose}
@@ -20,18 +20,18 @@ const ProductModal = ({ product, onClose }) => {
           <img 
             src={product.imagen} 
             alt={product.nombre}
-            className="w-full h-48 object-cover rounded mb-4"
+            className="w-full h-full mb-4 rounded object -cover"
           />
         )}
 
-        <p className="text-gray-600 mb-2">{product.descripcion}</p>
-        <p className="font-semibold">Precio: ${product.precio}</p>
+        <p className="mb-2 text-gray-600">{product.descripcion}</p>
+        <p className="font-semibold">Precio: ₡{product.precio}</p>
         <p className="font-semibold">Stock: {product.stock}</p>
 
-        <div className="mt-6 flex justify-end">
+        <div className="flex justify-end mt-6">
           <button 
             onClick={onClose}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
           >
             Cerrar
           </button>

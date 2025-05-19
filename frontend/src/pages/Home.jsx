@@ -1,13 +1,18 @@
 // src/pages/Home.jsx
 import React from 'react';
-import CardProducts from '../components/CardProducts';
+import Navbar from '../components/Navbar';
+import ProductCarousel from '../components/ProductCarousel';
+
+
 
 function Home() {
   return (
     <>
-      <div className="container mx-auto mt-10 p-4">
-        <h1 className="text-2xl font-bold mb-4">Productos</h1>
-        <CardProducts />
+      <Navbar />
+      <div className="container p-4 mx-auto mt-10">
+        <h1 className="text-3xl font-bold">Bienvenido a la Tienda</h1>
+        <p className="mt-4">Explora nuestros productos y ofertas especiales.</p>
+        <ProductCarousel />
       </div>
     </>
   );

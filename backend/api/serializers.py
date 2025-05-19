@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Producto, Categoria
+from .models import Producto, Categoria, UserProfile
+from django.contrib.auth.models import User
 
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:
@@ -37,3 +38,35 @@ class ProductoSerializer(serializers.ModelSerializer):
         
         instance.save()
         return instance
+    
+class UserRegisterSerializer(serializers.ModelSerializer):
+    profile_image = serializers.ImageField(required=False)
+    role = serializers.CharField(required=False)
+
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password', 'role', 'profile_image')
+        extra_kwargs = {'password': {'write_only': True}}
+
+    def create(self, validated_data):
+        role = validated_data.pop('role', None)
+        profile_image = validated_data.pop('profile_image', None)
+        user = User.objects.create_user(**validated_data)
+        
+        # Create UserProfile without profile_image
+        user_profile = UserProfile.objects.create(user=user)
+        
+        # Set profile_image if provided
+        if profile_image:
+            user_profile.profile_image = profile_image
+            user_profile.save()
+        
+        return user
+
+class UserLoginSerializer(serializers.Serializer):
+    class Meta:
+        model = User
+        fields = ['username', 'password']
+    
+    username = serializers.CharField()
+    password = serializers.CharField(write_only=True)
